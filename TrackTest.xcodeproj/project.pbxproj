@@ -19,6 +19,8 @@
 		7C10180D14473C27008AF3E6 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C10180914473BEC008AF3E6 /* VVBasics.framework */; };
 		7C10180E14473C2A008AF3E6 /* VVMIDI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7C10180714473BDB008AF3E6 /* VVMIDI.framework */; };
 		7C1018131447580B008AF3E6 /* NoteEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1018121447580B008AF3E6 /* NoteEvent.m */; };
+		7C10182E14479D2A008AF3E6 /* TrackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10182D14479D2A008AF3E6 /* TrackLayout.m */; };
+		7C10183314479E87008AF3E6 /* FourByFourDrumpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10183214479E87008AF3E6 /* FourByFourDrumpad.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +57,10 @@
 		7C10180914473BEC008AF3E6 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVBasics.framework; path = TrackTest/VVBasics.framework; sourceTree = "<group>"; };
 		7C1018111447580B008AF3E6 /* NoteEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteEvent.h; sourceTree = "<group>"; };
 		7C1018121447580B008AF3E6 /* NoteEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteEvent.m; sourceTree = "<group>"; };
+		7C10182C14479D2A008AF3E6 /* TrackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackLayout.h; sourceTree = "<group>"; };
+		7C10182D14479D2A008AF3E6 /* TrackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackLayout.m; sourceTree = "<group>"; };
+		7C10183114479E87008AF3E6 /* FourByFourDrumpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourByFourDrumpad.h; sourceTree = "<group>"; };
+		7C10183214479E87008AF3E6 /* FourByFourDrumpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourByFourDrumpad.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				7C1017F814472D77008AF3E6 /* TrackView.m */,
 				7C1018111447580B008AF3E6 /* NoteEvent.h */,
 				7C1018121447580B008AF3E6 /* NoteEvent.m */,
+				7C10183014479D31008AF3E6 /* Layouts */,
 			);
 			path = TrackTest;
 			sourceTree = "<group>";
@@ -134,6 +141,17 @@
 				7C1017E914472CBF008AF3E6 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C10183014479D31008AF3E6 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				7C10182C14479D2A008AF3E6 /* TrackLayout.h */,
+				7C10182D14479D2A008AF3E6 /* TrackLayout.m */,
+				7C10183114479E87008AF3E6 /* FourByFourDrumpad.h */,
+				7C10183214479E87008AF3E6 /* FourByFourDrumpad.m */,
+			);
+			name = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +219,8 @@
 				7C1017EE14472CBF008AF3E6 /* TrackTestAppDelegate.m in Sources */,
 				7C1017F914472D77008AF3E6 /* TrackView.m in Sources */,
 				7C1018131447580B008AF3E6 /* NoteEvent.m in Sources */,
+				7C10182E14479D2A008AF3E6 /* TrackLayout.m in Sources */,
+				7C10183314479E87008AF3E6 /* FourByFourDrumpad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +352,7 @@
 				7C1017F614472CBF008AF3E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

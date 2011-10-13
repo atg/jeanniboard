@@ -9,10 +9,16 @@
 #import <Cocoa/Cocoa.h>
 #import <VVMIDI/VVMIDI.h>
 
+@class FourByFourDrumpad;
+
+
 @interface TrackTestAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
+    VVMIDIManager *midiManager;
+    
+    FourByFourDrumpad *activeLayout;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (retain) VVMIDIManager *midiManager;
 @end
