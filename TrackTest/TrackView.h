@@ -19,6 +19,7 @@ typedef enum _PadPosition {
     VVMIDIManager *midiManager;
     NSMutableArray *notes;
     int noteCounter;
+    NSMutableDictionary *noteDict;
 }
 
 
