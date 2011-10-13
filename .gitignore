@@ -1,1 +1,7 @@
 /DerivedData
+*.xcuserdatad
+*.xcuserdatad/
+build/
+build
+build/*
+

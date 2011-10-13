@@ -15,10 +15,22 @@ typedef enum _PadPosition {
     PadPositionBottomRight
 } PadPosition;
 
+typedef struct {
+    int octave;
+    int pitch;
+    
+    CGFloat x;
+    CGFloat y;
+    
+} NoteKey;
+
 @interface TrackView : NSView {
     VVMIDIManager *midiManager;
     NSMutableArray *notes;
     int noteCounter;
+    
+    NoteKey* keyboard;
+    int octaves;
 }
 
 
