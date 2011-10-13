@@ -59,11 +59,35 @@ void GenerateKeyboard(int octaves, NoteKey* notekeys) {
         double y = ywidth * (row * 2.0 + 1);
         
         // Work out the X coord
-        int columns = (row % 2) == 0 ? 5 : 7;
+        int columns = 7;//(row % 2) == 0 ? 5 : 7;
         for (int column = 0; column < columns; column++) {
             
+            int column_index;
+            if ((row % 2) == 0) {
+                // Black keys
+                if (column == 0)
+                    column_index = 2;
+                else if (column == 1)
+                    column_index = 4;
+                else if (column == 2)
+                    column_index = 8;
+                else if (column == 3)
+                    column_index = 10;
+                else if (column == 4)
+                    column_index = 12;
+                else {
+                    continue;
+                }
+            }
+            else {
+                // White keys
+                column_index = (column * 2.0 + 1);
+            }
+            
+            printf("%d, %d, %d :: %d\n", row, column, i, column_index);
+            
             double xwidth = 1.0 / (columns * 2.0);
-            double x = xwidth * (column * 2.0 + 1);
+            double x = xwidth * column_index;
             
             NoteKey key;
             key.octave = octave;
